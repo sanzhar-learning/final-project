@@ -47,6 +47,18 @@ npm run build
 
 The first page load may take a moment because Pyodide and NumPy are loaded in the browser.
 
+## GitHub Pages Deployment
+
+This project is configured for:
+
+```text
+https://sanzhar-learning.github.io/final-project/
+```
+
+The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist` to GitHub Pages after each push to `main`.
+
+In the GitHub repository settings, open `Settings -> Pages` and set the source to `GitHub Actions`.
+
 ## Project Structure
 
 ```text
@@ -159,4 +171,3 @@ Suggested 10-minute structure:
 - Pyodide adds a larger first page load than a normal JavaScript-only app.
 - The project intentionally avoids advanced numerical methods to keep the code easy to present.
 - Possible future additions: Secant Method, LU Decomposition, spline interpolation, and exportable reports.
-# final-project
